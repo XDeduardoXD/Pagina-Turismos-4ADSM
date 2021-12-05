@@ -1,0 +1,29 @@
+{
+    "routes" : [
+       {
+          "legs" : [
+             {
+                "distance" : {
+                   "text" : "124 km",
+                   "value" : 124366
+                },
+                "duration" : {
+                   "text" : "2 h 56 min",
+                   "value" : 10562
+                },
+                "end_address" : "Carr. Zona Arqueológica \" Palenque \", 29963 Chis., México",
+                "end_location" : {
+                   "lat" : 17.4863222,
+                   "lng" : -92.04754989999999
+                },
+                "start_address" : "29950 Ocosingo, Chis., México",
+                "start_location" : {
+                   "lat" : 16.9087243,
+                   "lng" : -92.09435619999999
+                }
+             }
+          ],
+          "summary" : "Ocosingo - Palenque/Palenque - Ocosingo/México 199"
+       }
+    ]
+ }

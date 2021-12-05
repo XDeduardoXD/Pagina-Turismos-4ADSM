@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">4A DSM</a>
+        <ul class="slide_right">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="turismo.php">Su Turismo</a></li>
+            <li><a href="listahoteles.php">Hoteles</a></li>
+            <li><a href="grupo.html">Desarrolladores</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="img/arboles.png" id="arboles">
+        <h2 id="text">PALENQUE</h2>
+        <a href="#sec" id="btn">Conoce</a>
+        <img src="img/ruina.png" id="ruina">
+    </section>
+
+    <div class="sec" id="sec">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>TODO SOBRE PALENQUE</h2>
+                    <h3>Palenque, Chiapas</h3>
+                    <br>
+                    <p style="text-align: justify;">Este Pueblo Mágico es un paraíso para los amantes de la arqueología, la historia y la naturaleza. Primero, es vecino al sitio arqueológico de Palenque; y segundo, es un espacio privilegiado para explorar la selva, descubrir cascadas o deleitarse con la vista de lagunas y la fauna de la región. Tal es la importancia del sitio arqueológico de Palenque que forma parte del Patrimonio de la Humanidad de la UNESCO desde 1987.
+                        <br><br>
+                    Ubicado al noroeste del estado de Chiapas y enclavado en el corazón de una selva de clima tropical, aproximadamente a 290 km. de la Ciudad Capital y 220 km. de San Cristóbal de las Casas. Muy cercano a la ciudad de Palenque está una de las zonas arqueológicas más importantes del mundo maya, un destino que no se debe dejar de visitar durante el viaje a la región sur de la República Mexicana.
+                    </p>
+
+                    <center><img src="img/letra.jpg" width="50%"></center>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <p style="text-align: justify;">Mantiene una temperatura promedio anual de 26°C, con lluvias torrenciales durante el verano que no opacan las sorprendentes imágenes de templos y edificios explorados desde el siglo XIX y que datan de un período clásico de entre 400 y 700 DC. Entre sus construcciones más importantes se mencionan El Palacio, distinguido por su torre que sobresale del resto de la edificaciones; el Templo del Sol, el de la Cruz y el de la Cruz Foliada, que constituye un conjunto que rodea a la Plaza del Sol, así como el misterioso Templo de las Inscripciones, en el que se descubrió en 1952, la tumba del Rey Pakal, en un sarcófago bellamente tallado y con el ajuar funerario del antiguo gobernante de la Ciudad, quien mandó construir este edificio para que funcionara como su tumba sagrada.
+                    En castellano, Palenque significa “lugar cercado de una valla de madera o estacas”. La ciudad prehispánica data del siglo III, fue una de las ciudades más notables del mundo maya; también actuó como centro ceremonial, gracias a los patronos mayas interesados en demostrar su poder.  Fue una de las ciudades mayas más importantes de su tiempo, a la par de Calakmul y de Tikal. La población actual está compuesta por pueblos originarios como chol, tzeltal y lacandón.
+                        <br><br>
+                    Palenque se ubica en el corazón del sureste de México, al noreste del estado de Chiapas, en una zona de selva tropical alta donde abundan cascadas y ríos. Su clima es tropical, cálido, húmedo y lluvioso; con temperatura media de 27º C y picos de 36º C.
+                        <br><br>
+                    En la cocina local predomina el sabor autóctono, como los tamales chiapanecos, el pato en chirmol, el pescado sudado o el salpicón de venado. Para beber se sugiere probar el tascalate, el pozol o la chica; y  como postre, prueba los dulces elaborados a base de miel de abeja.
+                        <br><br>
+                    Entre las artesanías de la región destacan prendas exquisitamente bordadas, cerámica y joyería trabajada en ámbar.
+                        <br><br>
+                    Participa en el Programa Pueblos Mágicos desde 2015.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>TURISMO PALENQUE 2021</h3>
+            <h4>¡Mira nuestras redes sociales!</h4>
+            <h5>Y enterate de todo el contenido que tenemos para ti</h5>
+            <ul class="socials">
+                <li><a href="https://web.facebook.com/turismo.palenque"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/c/LugaresTur%C3%ADsticosdeM%C3%A9xico/videos"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        let arboles = document.getElementById('arboles');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let ruina = document.getElementById('ruina');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.marginRight = value * 4 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styleGrupo.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">4A DSM</a>
+        <ul  class="slide_right">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="turismo.php">Su Turismo</a></li>
+            <li><a href="listahoteles.php">Hoteles</a></li>
+            <li><a href="grupo.html" class="active">Desarrolladores</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="img/nosotros.png" id="">
+        <h2 id="text">Desarrolladores</h2>
+        <a href="#sec" id="btn">Nosotros</a>
+    </section>
+
+    <div class="sec" id="sec">
+        <div class="row">
+            <div class="col">
+                <center><h2>4° "A" de Desarrollo de Software Multiplataforma</h2></center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <center><h3>Nuestro equipo de trabajo esta conformado por 5 Desarrolladores de Software</h3></center>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="row">
+            <div class="col">
+                <center><img src="img/tobi.jpg" width="70%">
+                <h3>JAIRO HERNÁNDEZ GÓMEZ</h3>
+                <h4>Matrícula: <br>092010122</h4></center>
+            </div>
+            
+            <div class="col">
+                <center><img src="img/edu.jpg" width="70%">
+                <h3>CARLOS EDUARDO CHÁVEZ DÍAZ</h3>
+                <h4>Matrícula: 092010235</h4></center>
+            </div>
+            
+            <div class="col">
+                <center><img src="img/cecy.jpg" width="55%">
+                <h3>ADRIANA CECILIA MARCELIN ARAUJO</h3>
+                <h4>Matrícula: 092010009</h4></center>
+            </div>
+
+            <div class="col">
+                <center><img src="img/agua.jpg" width="35%">
+                <h3>DANIEL DE JESUS NAL HERNANDEZ</h3>
+                <h4>Matrícula: 092010499</h4></center>
+            </div>
+
+            <div class="col">
+                <center><img src="img/gil.jpg" width="70%">
+                <h3>GILBERTO YOSEMIR GONZÁLEZ MÉNDEZ</h3>
+                <h4>Matrícula: 092010444</h4></center>
+            </div>      
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>TURISMO PALENQUE 2021</h3>
+            <h4>¡Mira nuestras redes sociales!</h4>
+            <h5>Y enterate de todo el contenido que tenemos para ti</h5>
+            <ul class="socials">
+                <li><a href="https://web.facebook.com/turismo.palenque"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/c/LugaresTur%C3%ADsticosdeM%C3%A9xico/videos"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        let arboles = document.getElementById('arboles');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let ruina = document.getElementById('ruina');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.marginTop = value * 4 + 'px';
+            btn.style.marginTop = value * 4 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">4A DSM</a>
+        <ul class="slide_right">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html" class="active">Historia</a></li>
+            <li><a href="turismo.php">Su Turismo</a></li>
+            <li><a href="listahoteles.php">Hoteles</a></li>
+            <li><a href="grupo.html">Desarrolladores</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="img/cara1.png" id="arboles">
+        <h2 id="text">HISTORIA</h2>
+        <a href="#sec" id="btn">Enterate</a>
+        <img src="img/cara0.png" id="ruina">
+    </section>
+
+    <div class="sec" id="sec">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>HISTORIA</h2>
+                    <p style="text-align: justify;">Este Pueblo Mágico es un paraíso para los amantes de la arqueología, la historia y la naturaleza. Primero, es vecino al sitio arqueológico de Palenque; y segundo, es un espacio privilegiado para explorar la selva, descubrir cascadas o deleitarse con la vista de lagunas y la fauna de la región. Tal es la importancia del sitio arqueológico de Palenque que forma parte del Patrimonio de la Humanidad de la UNESCO desde 1987.
+                        <br><br>
+                    Palenque fue fundado por fray Pedro Lorenzo, a cierta distancia de las ruinas del mismo nombre en 1567. El padre dominico integró el pueblo con muchas familias choles dispersas en la Selva Lacandona. Se sabe que los nativos llamaban a Palenque, Otulún palabra de origen chol que significa "Sitio cercado o fortificado".
+                        <br><br>
+                    Es uno de los sitios más impresionantes de esta cultura. En comparación con otras ciudades mayas, se la considera de tamaño mediano: menor que Tikal o Copán, destaca por su acervo arquitectónico y escultórico.
+
+                    El área descubierta hasta 2005 abarca 2,5 kilómetros cuadrados, pero se estima que sólo se ha explorado menos de un 10% de la superficie total que alcanzó la ciudad, permaneciendo aún más de mil estructuras cubiertas por la selva.
+                        <br><br>
+                    La ciudad de Palenque fue fundada en 1567 por Fray Pedro Lorenzo de la Nada, quien en 1573 obsequió a la comunidad palencana tres campanas como símbolo de la fundación de su pueblo; de estas campanas en la actualidad únicamente se conserva la más grande, en la iglesia de la ciudad, y es considerada como el único testimonio de la fundación.
+                        <br><br>
+                    La zona arqueológica de Palenque, ubicada a tan solo 8km de la ciudad que lleva el mismo nombre, ha sido y es considerado el centro ceremonial más importante de la cultura Maya.
+                    </p>
+
+                    <center><img src="img/historia.jpg" width="70%"></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>TURISMO PALENQUE 2021</h3>
+            <h4>¡Mira nuestras redes sociales!</h4>
+            <h5>Y enterate de todo el contenido que tenemos para ti</h5>
+            <ul class="socials">
+                <li><a href="https://web.facebook.com/turismo.palenque"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/c/LugaresTur%C3%ADsticosdeM%C3%A9xico/videos"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        let arboles = document.getElementById('arboles');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let ruina = document.getElementById('ruina');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.marginRight = value * 4 + 'px';
+            btn.style.marginLeft = value * 4 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

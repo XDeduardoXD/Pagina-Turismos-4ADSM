@@ -1,0 +1,21 @@
+{"statuses":
+    [
+        {"created_at":"Wed Nov 10 14:36:24 +0000 2021",
+            "text":"Despu\u00e9s de 3 d\u00edas de arduo trabajo con el Colegio Mayor de Antioquia, estoy segura de que vamos a colaborar e impul\u2026 https:\/\/t.co\/e9SWrAOtde",
+            "entities":
+            {
+                "urls":[
+                    {"url":"https:\/\/t.co\/e9SWrAOtde"
+                        }
+                    ]
+                },
+                "user":{
+                    "id":178761199,
+                    "id_str":"178761199",
+                    "name":"Gabriela Berm\u00fadez",
+                    "screen_name":"GabRrielaBc",
+                    "location":"Ocosingo, Chiapas"
+            }
+        }
+    ]
+}
